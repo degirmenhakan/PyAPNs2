@@ -88,7 +88,7 @@ class APNsClient(object):
         json_payload = json_str.encode('utf-8')
 
         headers = {
-            'apns-push-type': notification.push_type
+            'apns-push-type-': notification.push_type
         }
 
         if topic is not None:
